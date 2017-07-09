@@ -1,0 +1,38 @@
+<resources xmlns:ns1="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Animation.Design.SideSheetDialog" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/side_sheet_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/side_sheet_slide_out</item>
+    </style>
+
+
+
+    <style name="Theme.Me.SideSheetDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.SideSheetDialog</item>
+        <item name="sideSheetStyle">@style/Widget.Me.SideSheet.Modal</item>
+    </style>
+
+    <style name="Theme.Me.Light.SideSheetDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.SideSheetDialog</item>
+        <item name="sideSheetStyle">@style/Widget.Me.SideSheet.Modal</item>
+    </style>
+
+    <style name="Widget.Me.SideSheet.Modal" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:elevation" ns1:ignore="NewApi">16dp</item>
+        <item name="behavior_peekWidth">auto</item>
+        <item name="behavior_hideable">true</item>
+        <item name="behavior_skipCollapsed">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="side_sheet_peek_width_min">1dp</dimen>
+</resources>

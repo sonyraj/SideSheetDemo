@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SideSheetDemo</string>
+    <string name="side_sheet_behavior" translatable="false">srs.me.sidesheetdemo.SideSheetBehavior</string>
+</resources>
