@@ -215,14 +215,11 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavio
                 mPeekWidthMin = parent.getResources().getDimensionPixelSize(
                         R.dimen.side_sheet_peek_width_min);
             }
-
-            int parentHeight = parent.getHeight();
-            peekWidth = Math.max(mPeekWidthMin, mParentWidth - parentHeight * 9 / 45);
+            peekWidth = mParentWidth ;
         } else {
             peekWidth = mPeekWidth;
         }
 
-        peekWidth = mParentWidth ;
 
         mMinOffset = Math.max(0, mParentWidth - child.getWidth());
         mMaxOffset = Math.max(mParentWidth - peekWidth, mMinOffset);
