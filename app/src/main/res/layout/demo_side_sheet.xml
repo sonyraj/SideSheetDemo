@@ -15,6 +15,7 @@
         android:background="@color/colorAccent"/>
 
     <TextView
+        android:id="@+id/touch"
         android:layout_width="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold"

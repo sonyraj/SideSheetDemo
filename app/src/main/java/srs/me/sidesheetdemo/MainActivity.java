@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 DemoSideSheetDialogFragment dialog = new DemoSideSheetDialogFragment();
-                dialog.setCancelable(true);
+                dialog.setCancelable(false);
                 dialog.show(getSupportFragmentManager(), DemoSideSheetDialogFragment.class.getName());
             }
         });
